@@ -1,10 +1,11 @@
 # fivem-server-default
+Install fivem base server `./deploy-fivem.sh`  
+adds essentialmode, esx, and other packages. 
+ 
 
-run `deploy-fivem.sh`
-Installs user and deploys server files
 
 
-##Complete list of Mods:
+## Complete list of Mods:  
 AdminArea
 allcity_wallet
 async
