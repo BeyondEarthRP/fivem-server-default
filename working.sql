@@ -908,7 +908,16 @@ INSERT INTO `job_grades` (`id`, `job_name`, `grade`, `name`, `label`, `salary`, 
 (108, 'army', 17, 'divisiongeneral', 'Général de division', 3750, '{}', '{}'),
 (109, 'army', 18, 'generalofthearmycorps', 'Général de corps d\'armée', 4000, '{}', '{}'),
 (110, 'army', 19, 'generalarmy', 'Général d\'armée', 4700, '{}', '{}'),
-(111, 'army', 20, 'boss', 'Maréchal', 5200, '{}', '{}');
+(111, 'army', 20, 'boss', 'Maréchal', 5200, '{}', '{}'),
+(112, 'offpolice', 0, 'recruit', 'Recruit', 12, '{}', '{}'),
+(113, 'offpolice', 1, 'officer', 'Officer', 24, '{}', '{}'),
+(114, 'offpolice', 2, 'sergeant', 'Sergeant', 36, '{}', '{}'),
+(115, 'offpolice', 3, 'lieutenant', 'Lieutenant', 48, '{}', '{}'),
+(116, 'offpolice', 4, 'boss', 'Boss', 0, '{}', '{}'),
+(117, 'offambulance', 0, 'ambulance', 'Ambulance', 12, '{}', '{}'),
+(118, 'offambulance', 1, 'doctor', 'Doctor', 24, '{}', '{}'),
+(119, 'offambulance', 2, 'chief_doctor', 'Chef', 36, '{}', '{}'),
+(120, 'offambulance', 3, 'boss', 'Boss', 48, '{}', '{}');
 
 -- --------------------------------------------------------
 
