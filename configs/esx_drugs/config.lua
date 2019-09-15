@@ -10,13 +10,13 @@ Config.DrugDealerItems = {
 	marijuana = 91
 }
 
-Config.LicenseEnable = false -- enable processing licenses? The player will be required to buy a license in order to process drugs. Requires esx_license
+Config.LicenseEnable = true -- enable processing licenses? The player will be required to buy a license in order to process drugs. Requires esx_license
 
 Config.LicensePrices = {
 	weed_processing = {label = _U('license_weed'), price = 15000}
 }
 
-Config.GiveBlack = true -- give black money? if disabled it'll give regular cash.
+Config.GiveBlack = false -- give black money? if disabled it'll give regular cash.
 
 Config.CircleZones = {
 	WeedField = {coords = vector3(310.91, 4290.87, 45.15), name = _U('blip_weedfield'), color = 25, sprite = 496, radius = 100.0},

@@ -77,4 +77,11 @@ Stores = {
 		secondsRemaining = 200, -- seconds
 		lastRobbed = 0
 	}
+	["innocence_twentyfourseven"] = {
+		position = { x = 28.19, y = -1339.26, z = 29.5 },
+		reward = math.random(4000, 9000),
+		nameOfStore = "24/7 (Innocence Boulevard)",
+		secondsRemaining = 200, -- seconds
+		lastRobbed = 0
+	},
 }
