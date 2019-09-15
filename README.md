@@ -1,103 +1,129 @@
-# fivem-server-default
-Install fivem base server `./deploy-fivem.sh`  
-adds essentialmode, esx, and other packages. 
- 
+###############################################################################################
+###############################################################################################
+#####
+#####
+#####   Grand Theft Auto - FiveM
+#####         Read Me
+#####   ESX & Mods Custom Server
+#####
+#####
+###############################################################################################
+###############################################################################################
+
+## Welcome
+All info can be found ingame through the Tablet "L"
+
+Tablet Sections:  
+News  
+Commands & Hotkeys  
+Laws  
+Rules  
+Job Tutorials  
+OpenCAD  
+YouTube  
+Snake  
+
+
+
+
 
 ## Key Bindings
-
 Key       Addon              Action       Key #
-F1      Phone                   -           -  
-F2      Inventory HUD           -           -  
-F3      Annimations             -           -  
-F5      Accessories             -           -  
-F6      Job Menu                -           -  
-F7      Invoices                -           -  
-F9      Show Money              -           -  
-F10     Hide HUD                -           -  
-PgUp    ESX AIO Menu            -           -  
-PgDwn   NoClipping              -           -  
-  
-L       Tablet                  -           -  
-M       vMenu                   -           -  
-  
-  
-N       RPCommands           Location       -  
-C       Crouch                  -           -  
-Ctrl    Prone                   -           -   
-X       Hands Up                -           -  
-Y       radargun            menu open       246. 
-E       radargun              freeze        38. 
+F1      Phone                   -           -
+F2      Inventory HUD           -           -
+F3      Annimations             -           -
+F5      Accessories             -           -
+F6      Job Menu                -           -
+F7      Invoices                -           -
+F8      Console*
+F9      Show Money              -           -
+F10     Hide HUD                -           -
+F11     Scoreboard
+PgUp    ESX AIO Menu            -           -
+PgDwn   NoClipping              -           -
 
-## Text Commands. 
-### kcc-help. 
-/help. 
+L       Tablet                  -           -
+M       vMenu                   -           -
+
+
+N       RPCommands           Location       -
+C       Crouch                  -           -
+Ctrl    Prone                   -           -
+X       Hands Up                -           -
+Y       radargun            menu open       246
+E       radargun              freeze        38
+
+
+## Text Commands
+### kcc-help
+/help  
 /help-rp  
-/help-police. 
-/help-race. 
+/help-police  
+/help-race  
 
-### RPCommands - Core Commands. 
-//      Out Of Character. 
-/me     Me. 
-/it     none. 
+### RPCommands - Core Commands  
+//      Out Of Character  
+/me     Me  
+/it     none  
 
-### RPCommands - Roleplay Commands. 
-/r          [Radio]. 
-/dipatch    [Dispatch]. 
-/911. 
-/rpname. 
-/roll. 
+### RPCommands - Roleplay Commands  
+/r          [Radio]  
+/dipatch    [Dispatch]  
+/911  
+/rpname  
+/roll  
 
-### RPCommands - Police Commands. 
-/p. 
-/20. 
+### RPCommands - Police Commands  
+/p  
+/20   
 /id  
-/32. 
+/32  
 /8  
 /8f  
 /7  
-/7f. 
-/7g. 
-/7m. 
+/7f  
+/7g  
+/7m  
 /7i  
-/6. 
-/47. 
-/23. 
-/code4. 
-/80. 
-/4. 
-/11. 
-/28. 
-/29. 
+/6  
+/47  
+/23  
+/code4  
+/80  
+/4  
+/11  
+/28  
+/29  
 
 
-## Job List
+## Job List  
 Airlines  
-Ambbulance  
-Army  
+Ambulance  
+Army*  
 Banker  
 Car Dealer  
 Marina  
-FBI  
+FBI*  
 LSFD  
 Fisherman  
 Fuerler  
-Gang   
-Heli Pilot. 
-Hitman  
+Gang  
+Heli Pilot  
+Hitman*  
 Lumberjack  
-Mafia  
+Mafia*  
 Mechanic  
 Miner  
 Nightclub  
-LSPD  
+LSPD*  
 Realestate Agent  
 Journalist  
 Butcher  
 Tailor  
 Taxi Driver  
-The Lost MC  
+The Lost MC*  
 Unemployed  
-Unicorn Club 
+Unicorn Club  
 
 
 
@@ -221,3 +247,6 @@ skinchanger
 StreetRaces
 VehicleTrustSystem
 vMenu
+
+Install fivem base server `./deploy-fivem.sh`  
+adds essentialmode, esx, and other packages. 
