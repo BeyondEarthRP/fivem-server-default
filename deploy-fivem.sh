@@ -3,6 +3,7 @@
 #####
 #####   FiveM Roleplay Server
 #####     Grand Theft Auto
+#####      Deploy Script
 #####
 ##############################################################
 ###############################
@@ -286,7 +287,7 @@ echo "ESX - Hospitals"
 
 echo "ESX - License Shop"
     git clone https://github.com/HumanTree92/esx_licenseshop.git "$ESX"/esx_licenseshop
-
+    
 echo "ESX - Dockshop"
     git clone https://github.com/ESX-PUBLIC/esx_dockshop.git "$ESX"/esx_dockshop
 
@@ -356,6 +357,13 @@ echo "ESX - License"
 
 echo "ESX - DMV School"
     git clone https://github.com/ESX-Org/esx_dmvschool "$ESX"/esx_dmvschool
+    echo "Set English"
+        mv "$ESX"/esx_dmvschool/html/questions.js "$ESX"/esx_dmvschool/html/questions.js-orig
+        mv "$ESX"/esx_dmvschool/html/questions_en.js "$ESX"/esx_dmvschool/html/questions.js
+
+        mv "$ESX"/esx_dmvschool/html/ui.html "$ESX"/esx_dmvschool/html/ui.html-orig
+        mv "$ESX"/esx_dmvschool/html/ui_en.html "$ESX"/esx_dmvschool/html/ui.html
+
 
 ## ---- Licenses ---- ##
 
@@ -391,6 +399,11 @@ echo "Crouch & Prone"
 echo "Crouch Alternative"
 # https://forum.fivem.net/t/release-crouch-script-1-0-1-now-button-based/14742
 
+echo "Out Of Character Chat"
+    git clone https://github.com/fuzzymannerz/ooc.git "$MODS"/ooc
+
+echo "PVP"
+    git clone https://github.com/McLurch/esx_pvp.git "$ESX"/esx_pvp
 
 ## ---- Roleplay ---- ##
 
@@ -460,6 +473,9 @@ echo "ESX - Jobs - The Lost Mc"
     unzip "$TFIVEM"/esx_thelostmcjob/esx_thelostmcjob.zip -d "$TFIVEM"/esx_thelostmcjob/
     rm "$TFIVEM/esx_thelostmcjob/esx_thelostmcjob.zip"
     cp -R "$TFIVEM/esx_thelostmcjob/esx_thelostmcjob" "$ESX/esx_thelostmcjob"
+    Echo "The Lost MC Garage"
+        git clone https://github.com/EdGeMapping/MCGarage.git "$TFIVEM"/MCGarage
+        cp -R "TFIVEM"/MCGargage/EdGe-MCGarage "$MAPS"/MCGarage
 
 echo "ESX - Jobs - Hitman"
     git clone https://github.com/MikeyJY/esx_hitman.git "$TFIVEM"/hitman
@@ -517,6 +533,7 @@ echo "FRFuel"
 echo "ESX - Off Duty"
     git clone https://github.com/qalle-fivem/esx_duty.git "$ESX"/esx_duty
 
+
 echo "Radar Gun"
     git clone https://github.com/TerbSEC/Radargun.git "$MODS"/radargun
 
@@ -537,7 +554,7 @@ echo "ESX - Handcuffs"
 
 
 
-## ---- Crimanl Options ---- ##
+## ---- Crimanal Options ---- ##
 
 echo "ESX - Drugs"
     git clone https://github.com/ESX-Org/esx_drugs "$ESX"/esx_drugs
@@ -584,7 +601,7 @@ echo "ESX - Drill"
 echo "ESX - Car Thief"
     git clone https://github.com/KlibrDM/esx_carthief.git "$ESX"/esx_carthief
 
-## ---- Crimanl Options ---- ##
+## ---- Crimanal Options ---- ##
 
 
 
@@ -615,8 +632,8 @@ echo "ESX - AIO Menu"
 
 echo "vMenu"
     mkdir "$TFIVEM"/vMenu
-    wget -P "$TFIVEM"/vMenu https://github.com/TomGrobbe/vMenu/releases/download/v3.0.3/vMenu-v3.0.3.zip
-    unzip "$TFIVEM"/vMenu/vMenu-v3.0.3.zip -d "$TFIVEM"/vMenu
+    wget -P "$TFIVEM"/vMenu https://github.com/TomGrobbe/vMenu/releases/download/v3.1.0/vMenu-v3.1.0.zip
+    unzip "$TFIVEM"/vMenu/vMenu-v3.1.0.zip -d "$TFIVEM"/vMenu
     cp -R "$TFIVEM"/vMenu "$MODS"/vMenu
     cp "$MODS"/vMenu/config/permissions.cfg "$GAME"/permissions.cfg
 
@@ -692,11 +709,21 @@ echo "Sexy Speedometer"
 echo "ESX - Repair Kits"
     git clone https://github.com/condolent/esx_repairkit.git "$ESX"/esx_repairkit
 
+echo "Realistic Vehicle Failure"
+    git clone https://github.com/McLurch/RealisticVehicleFailure.git "$MODS"/RealisticVehicleFailure
+
+echo "Salty Vehicle Blackout"
+    git clone https://github.com/SaltyGrandpa/salty_vehicleblackout.git "$MODS"/salty_vehicleblackout
+
 ## ---- Vehicle Options ---- ##
 
+echo "esx_scoreboard"
+    git clone https://github.com/Stadus/Stadus_Scoreboard.git [esx]/esx_scoreboard
 
-
-
+echo "seatbelts"
+    git clone https://github.com/IndianaBonesUrMom/fivem-seatbelt.git "$TFIVEM"/seatbelts
+    mv "$TFIVEM"/seatbelts/fivem-seatbelt "$TFIVEM"/seatbelts/seatbelt
+    cp -R "$TFIVEM"/seatbelts/seatbelt "$RESOURCES"/[mods]
 ## ---- Admin ---- ##
 
 echo "Admin Area"
@@ -767,22 +794,133 @@ echo "Eden Accessories"
 
 
 
+## ---- Vehicles ---- ##
+
+echo "wtf_redis"
+    git clone
+echo "wtf_supercharged"
+    git clone https://github.com/wtf-fivem-mods/wtf_tesla_supercharger.git "$VEHICLES"/wtf_supercharged
+
+echo "wtf_teslax"
+    git clone https://github.com/wtf-fivem-mods/wtf_teslax.git "$VEHICLES"/wtf_teslax
+
+echo "wtf_ev"
+    git clone https://github.com/wtf-fivem-mods/wtf_ev "$VEHICLES"/wtf_ev
+
+
+
+echo "Planes"
+    git clone https://github.com/JPapss/-Release--Planes--and-Helicopter-s---Pack--10--Planes-and-Helicopter-s--.git "$VEHICLES"/air_pack-1
+
+## ---- END Vehicles ---- ##
+
+
+
+
+
+## ---- Chat ---- ##
+echo "Civ Font Awesome"
+    git clone https://github.com/Krizfrost/civfontawesome.git "$TFIVEM"/civfontawesome
+    cp -R "$TFIVEM"/civfontawesome/esx_rpchat "$ESX"/esx_rpchat
+    cp -R "$TFIVEM"/civfontawesome/chat-theme-civlifechat "MODS"/chat-theme-civlifechat
+
+echo "[ESX] - RP Chat"
+git clone git clone https://github.com/ESX-Org/esx_rpchat "$ESX"/esx_rpchat
+
+echo "Custom Chat"
+    git clone https://github.com/FiveM-Scripts/customchat.git "$MODS"/customchat
+## ---- END Chat ---- ##
+
+
+
+
+
+## ---- Computer Aided Dispatch ---- ##
+echo "Open CAD"
+    echo "Dependancies"
+        apt-get install software-properties-common
+        add-apt-repository ppa:ondrej/php
+        apt-get update
+        apt-get install php7.3
+        apt-get install php-pear php7.3-curl php7.3-dev php7.3-gd php7.3-mbstring php7.3-zip php7.3-mysql php7.3-xml
+        php -v
+        a2enmod php7.3
+    echo "Addon"
+        git clone https://github.com/StormlightTech/OpenCAD-php.git /var/www/opencad
+
+"Tabby"
+    git clone https://github.com/AminYabut/tabby.git "$TFIVEM"/tabby
+    cp -R "$TFIVEM"/tabby/tab "$RESOURCES"/[mods]
+
+
+
+echo "MDT - InGame CAD"
+    git clone https://github.com/Clatanii/MDT-CHAR.git "$TFIVEM"/mdt-char
+    cp -R "$TFIVEM"/mdt-char/MDT "$MODS"/MDT
+
+
+## ---- END Computer Aided Dispatch ---- ##
+
+
+
+
+
+## ---- Administration Panels ---- ##
+
+echo "Administration Panel"
+    git clone https://github.com/CADOJRP/FiveM-AdministrationPanel.git /var/software/fivem/adminpanel
+    cp -R /var/software/fivem/adminpanel/fivem/staff /home/fivemserver/server-data/resources/[mods]
+    cp -R /var/software/fivem/adminpanel/web /var/www/html
+    mv /var/www/html/web /var/www/html/adminpanel
+
+echo "ESX Panel"
+    git clone https://github.com/Jeffrey-Lang/esx_panel_controller.git "$ESX"/esx_panel_controller
+
+#    mv [esx]/esx_society [esx]/esx_society-orig
+    git clone https://github.com/Jeffrey-Lang/esx_society.git "$ESX"/esx_society-alt
+
+    git clone https://github.com/Jeffrey-Lang/whitelistjobs-SG.git "$MODS"/whitelistjobs
+
+#    mv [esx]/esx_vehicleshop [esx]/esx_vehicleshop-orig
+    git clone https://github.com/Jeffrey-Lang/esx_vehicleshop.git"$ESX"//esx_vehicleshop-alt
+
+    git clone https://github.com/Bluethefurry/EasyAdmin.git "$MODS"/EasyAdmin
+
+    git clone https://github.com/Jeffrey-Lang/EasyAdmin-MySQL.git "$MODS"/EasyAdmin-Mysql
+
+## ---- END Administration Panels ---- ##
+
+
+
+
+
+## ---- Karma Crew Addons ---- ##
+
+echo "Help Commands"
+    git clone https://github.com/McLurch/kcc-help.git "$MODS"/kcc-help
+
+echo "Loadingscreen"
+
+## ---- END Karma Crew Addons ---- ##
+
+
+
+
 
 ## ---- FiveM Server Defaults ---- ##
 
-
-git clone https://github.com/McLurch/fivem-server-default.git "$TFIVEM"/fivem-server-defaults
+echo "FiveM Server Defaults"
+    git clone https://github.com/McLurch/fivem-server-default.git "$TFIVEM"/fivem-server-defaults
     cp "$TFIVEM"/fivem-server-defaults/server.cfg "$GAME"/server.cfg
     cp "$TFIVEM"/fivem-server-defaults/resources.cfg "$GAME"/resources.cfg
     cp "$TFIVEM"/fivem-server-defaults/resources-maps.cfg "$GAME"/resources-maps.cfg
+    cp "$TFIVEM"/fivem-server-defaults/vmenu.cfg "$GAME"/vmenu.cfg
+#       cp /var/software/fivem/fivem-server-default/vmenu.cfg /home/fivemserver/server-data/vmenu.cfg
+    cp "$TFIVEM"/fivem-server-defaults/admin.cfg "$GAME"/admin.cfg
 
-    mysql --user="$mysql_user" --password="$mysql_password" essentialmode < "$TFIVEM"/fivem-server-defaults/working.sql
+    mysql --user="$mysql_user" --password="$mysql_password" essentialmode < "$TFIVEM"/fivem-server-defaults/sql/working.sql
 
-
-
-
-
-
+## ---- END FiveM Server Defaults ---- ##
 
 
 
@@ -802,7 +940,8 @@ echo "Trevors House"
     git clone https://github.com/NexusRisen/Trevor-s-Log-House.git "$MAPS"/trevors-log-house
 
 echo "Mansion Under The Bridge"
-    git clone https://github.com/NexusRisen/Mansion-under-the-bridge.git "$MAPS"/Mansion-under-the-bridge
+    git clone https://github.com/NexusRisen/Mansion-under-the-bridge.git "$MAPS"/mansion-under-the-bridge
+
 
 echo "Beta Vegitation"
     git clone https://github.com/NexusRisen/Beta-Vegetation---Props.git "$MAPS"/beta-vegitation
@@ -874,6 +1013,40 @@ echo "Railhouse"
     git clone https://github.com/NexusRisen/Railhouse.git "$MAPS"/railhouse
 
 ## ---- Map Mods - Optional ---- ##
+
+
+
+
+
+
+
+
+#nano $RESOURCES/[mods]/AdminArea
+# [mods]/allcity_wallet
+#nano $RESOURCES/[mods]/async
+#nano $RESOURCES/[mods]/BaseJumping
+# $RESOURCES/[mods]/cron
+# [mods]/crouch-n-prone
+
+
+#nano $RESOURCES/[mods]/ft_libs
+#nano $RESOURCES/[mods]/instance
+#nano $RESOURCES/[mods]/mysql-async
+#nano $RESOURCES/[mods]/pNotify
+#nano $RESOURCES/[mods]/ServerPassword/server.lua
+#nano $RESOURCES/[mods]/SexySpeedometer
+#nano $RESOURCES/[mods]/VehicleTrustSystem
+#nano $RESOURCES/[mods]/vMenu
+#nano $RESOURCES/[essential]/es_admin2
+# [essential]/esplugin_mysql
+
+
+
+
+
+
+
+
 
 
 
