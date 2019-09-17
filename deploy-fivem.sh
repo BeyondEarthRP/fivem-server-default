@@ -376,6 +376,18 @@ echo "ESX - DMV School"
 echo "ESX - Phone"
     git clone https://github.com/ESX-Org/esx_phone "$ESX"/esx_phone
 
+        mv "$ESX"/esx_phone/html/scripts/app.js "$ESX"/esx_phone/html/scripts/app.js-orig
+        mv "$ESX"/esx_phone/html/scripts/app_en.js "$ESX"/esx_phone/html/scripts/app.js
+
+        mv "$ESX"/esx_phone/html/ui.html "$ESX"/esx_phone/html/ui.html-orig
+        mv "$ESX"/esx_phone/html/ui_en.html "$ESX"/esx_phone/html/ui.html
+#        mv [esx]/esx_phone/html/scripts/app.js [esx]/esx_phone/html/scripts/app.js-orig
+#        mv [esx]/esx_phone/html/scripts/app_en.js [esx]/esx_phone/html/scripts/app.js
+
+mv [esx]/esx_phone/html/ui.html [esx]/esx_phone/html/ui.html-orig
+mv [esx]/esx_phone/html/ui_en.html [esx]/esx_phone/html/ui.html
+
+
 echo "ESX - Show Commands"
     git clone https://github.com/Calibrateds/esx_showcommands.git "$TFIVEM"/showcommands
     cp -R "$TFIVEM"/showcommands/esx_showcommands "$ESX"/esx_showcommands
@@ -408,6 +420,58 @@ echo "PVP"
 ## ---- Roleplay ---- ##
 
 
+
+echo "ESX - Money Laundering"
+echo "Going Postal"
+     clone https://github.com/Krizfrost/-ESX--Money-Laundering.git "$ESX"/esx_moneylaundering
+
+echo "ESX - Slot Machine"
+    git clone https://github.com/EnVyyyyy/esx_slotmachine "$ESX"/esx_slotmachine
+
+echo "ESX - Handcuffs"
+    git clone https://github.com/scorpio686/esx_handcuffs.git "$ESX"/esx_handcuffs
+#   mysql -u hommer --password='' essentialmode < [esx]/esx_handcuffs/esx_handcuffs.sql
+
+echo "ESX - Coffee"
+    git clone https://github.com/Thananyx/esx_coffee.git "$ESX"/esx_coffee
+#  mysql -u hommer --password='' essentialmode < [esx]/esx_coffee/esx_coffees.sql
+
+echo "ESX - Uni Show"
+    git clone https://github.com/gregos1810/esx_unishow.git "$ESX"/esx_unishow
+
+echo "ESX - Poolcleaner"
+    git clone https://github.com/Cha0sNighT/esx_poolcleaner.git "$ESX"/esx_poolcleaner
+#   mysql -u hommer --password='' essentialmode < [esx]/esx_poolcleaner/esx_poolcleaner.sql
+
+echo "ESX - Pharmacy"
+    git clone https://github.com/MRDIKORYTB/esx_pharmacy.git "$TFIVEM"/esx_pharmacy
+    cp -R /var/software/fivem/esx_pharmacy/esx_pharmacy "$RESOURCES"/[esx]
+#**    mysql -u hommer --password='' essentialmode < [esx]/esx_pharmacy/esx_pharmacy.sql
+
+echo "ESX - Gardener"
+    git clone https://github.com/Cha0sNighT/esx_gardener.git "$ESX"/esx_gardener
+#   mysql -u hommer --password='' essentialmode < [esx]/esx_gardener/esx_gardener.sql
+
+echo "ESX - Speed Radar"
+    git clone https://github.com/Cha0sNighT/esx_speed_radar.git "$ESX"/esx_speed_radar
+#*    mysql -u hommer --password='' essentialmode < [esx]/esx_speed_radar/peage_flash.sql
+    mapping_speedradar
+    esx_speedradar
+
+echo "ESX - Brinks"
+    git clone https://github.com/Cha0sNighT/esx_brinks.git "$ESX"/esx_brinks
+#   mysql -u hommer --password='' essentialmode < [esx]/esx_brinks/esx_brinks.sql
+
+echo "ESX - Lawyerjob"
+    git clone https://github.com/ESX-PUBLIC/esx_lawyerjob.git "$ESX"/esx_lawyerjob
+#***    mysql -u hommer --password='' essentialmode < [esx]/esx_lawyerjob/esx_laywerjob.sql
+
+echo "All City - Medical"
+    git clone https://github.com/AllCitySor/allcity_medical.git "$MODS"/allcity_medical
+
+echo "MedSystem"
+    git clone https://github.com/Kuzkay/MedSystem.git "$TFIVEM"/MedSystem
+    cp -R "$TFIVEM"/MedSystem/medSystem "$MODS"/MedSystem
 
 
 
@@ -718,7 +782,7 @@ echo "Salty Vehicle Blackout"
 ## ---- Vehicle Options ---- ##
 
 echo "esx_scoreboard"
-    git clone https://github.com/Stadus/Stadus_Scoreboard.git [esx]/esx_scoreboard
+    git clone https://github.com/Stadus/Stadus_Scoreboard.git "$ESX"/esx_scoreboard
 
 echo "seatbelts"
     git clone https://github.com/IndianaBonesUrMom/fivem-seatbelt.git "$TFIVEM"/seatbelts
@@ -848,7 +912,7 @@ echo "Open CAD"
     echo "Addon"
         git clone https://github.com/StormlightTech/OpenCAD-php.git /var/www/opencad
 
-"Tabby"
+echo "Tabby"
     git clone https://github.com/AminYabut/tabby.git "$TFIVEM"/tabby
     cp -R "$TFIVEM"/tabby/tab "$RESOURCES"/[mods]
 
@@ -868,9 +932,9 @@ echo "MDT - InGame CAD"
 ## ---- Administration Panels ---- ##
 
 echo "Administration Panel"
-    git clone https://github.com/CADOJRP/FiveM-AdministrationPanel.git /var/software/fivem/adminpanel
-    cp -R /var/software/fivem/adminpanel/fivem/staff /home/fivemserver/server-data/resources/[mods]
-    cp -R /var/software/fivem/adminpanel/web /var/www/html
+    git clone https://github.com/CADOJRP/FiveM-AdministrationPanel.git "$TFIVEM"/adminpanel
+cp -R "$TFIVEM"/adminpanel/fivem/staff "$RESOURCES"/[mods]
+    cp -R "$TFIVEM"/adminpanel/web /var/www/html
     mv /var/www/html/web /var/www/html/adminpanel
 
 echo "ESX Panel"
@@ -902,6 +966,27 @@ echo "Help Commands"
 echo "Loadingscreen"
 
 ## ---- END Karma Crew Addons ---- ##
+
+
+echo "Tow Truck Mod"
+git clone https://github.com/Asser90/asser-tow.git "$MODS"/asser_tow
+
+echo "ESX - Vehicle Lock"
+git clone https://github.com/ESX-PUBLIC/esx_vehiclelock.git "$ESX"/esx_vehiclelock
+
+echo "ESX - Boilerplate"
+git clone https://github.com/ESX-Org/esx_boilerplate.git [esx]/esx_boilerplate
+
+echo "ESX - Gym"
+git clone https://github.com/P4NDAzzGaming/esx_gym.git "$ESX"/esx_gym
+
+echo "ESX - Clip"
+git clone https://github.com/gregos1810/esx_clip.git "$ESX"/esx_clip
+
+echo "ESX - Discord Bot"
+git clone https://github.com/ElNelyo/esx_discord_bot.git "$ESX"/esx_discord_bot
+
+
 
 
 
