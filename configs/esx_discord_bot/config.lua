@@ -1,12 +1,12 @@
-Config                        = {}
-Config.Locale 				  = 'fr'
+Config                        		  = {}
+Config.Locale 				  = 'en'
 Config.green 				  = 56108
 Config.grey 				  = 8421504
-Config.red 					  = 16711680
+Config.red 				  = 16711680
 Config.orange 				  = 16744192
 Config.blue 				  = 2061822
 Config.purple 				  = 11750815
-Config.webhook                = "PASTE_HERE_YOUR_WEBHOOK"
+Config.webhook                  	  = "PASTE_HERE_YOUR_WEBHOOK"
 
 
 settings = {
