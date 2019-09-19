@@ -1503,7 +1503,6 @@ PRIMARY KEY (`model`)
 --
 -- Dumping data for table `vehicles`
 --
-
 INSERT INTO `vehicles` (`name`, `model`, `price`, `category`) VALUES
 # Coupes
 ('Blista', 'BLISTA', 25000, 'coupes'),
@@ -1512,9 +1511,9 @@ INSERT INTO `vehicles` (`name`, `model`, `price`, `category`) VALUES
 ('Dilettante II', 'DILETTANTE2', 25000, 'coupes'),
 ('Issi II', 'ISSI2', 25000, 'coupes'),
 ('Issi Classic', 'ISSI3', 25000, 'coupes'),
-('Issi Apocalypse', 'ISSI4', 25000, 'coupes'), // MPCHRISTMAS2018 DLC
-('Issi Future Shock', 'ISSI5', 25000, 'coupes'), // MPCHRISTMAS2018 DLC
-('Issi Nightmare', 'ISSI6', 25000, 'coupes'), // MPCHRISTMAS2018 DLC
+('Issi Apocalypse', 'ISSI4', 25000, 'coupes'),                      // MPCHRISTMAS2018 DLC
+('Issi Future Shock', 'ISSI5', 25000, 'coupes'),                    // MPCHRISTMAS2018 DLC
+('Issi Nightmare', 'ISSI6', 25000, 'coupes'),                       // MPCHRISTMAS2018 DLC
 ('Panto', 'PANTO', 25000, 'coupes'),
 ('Prairie', 'PRAIRIE', 25000, 'coupes'),
 ('Rhapsody', 'RHAPSODY', 25000, 'coupes'),
@@ -1543,7 +1542,7 @@ INSERT INTO `vehicles` (`name`, `model`, `price`, `category`) VALUES
 ('Schafter', 'SCHAFTER2', 25000, 'sedans'),
 ('Schafter V12 (Armored)', 'SCHAFTER5', 25000, 'sedans'),
 ('Schafter LWB (Armored)', 'SCHAFTER6', 25000, 'sedans'),
-('Stafford', 'STAFFORD', 25000, 'sedans'), // dlc (mpbattle)
+('Stafford', 'STAFFORD', 25000, 'sedans'),                      // dlc (mpbattle)
 ('Stanier', 'STANIER', 25000, 'sedans'),
 ('Stratum', 'STRATUM', 25000, 'sedans'),
 ('Stretch', 'STRETCH', 25000, 'sedans'),
@@ -1575,12 +1574,12 @@ INSERT INTO `vehicles` (`name`, `model`, `price`, `category`) VALUES
 ('Mesa', 'MESA', 25000, 'suvs'),
 ('Mesa II', 'MESA2', 25000, 'suvs'),
 ('Patriot', 'PATRIOT', 25000, 'suvs'),
-('Patriot Stretch', 'PATRIOT2', 25000, 'suvs'), // dlc (mpbattle)
+('Patriot Stretch', 'PATRIOT2', 25000, 'suvs'),             // dlc (mpbattle)
 ('Radius', 'RADI', 25000, 'suvs'),
 ('Rocoto', 'ROCOTO', 25000, 'suvs'),
 ('Seminhole', 'SEMINOLE', 25000, 'suvs'),
 ('Serrano', 'SERRANO', 25000, 'suvs'),
-('Toros', 'TOROS', 25000, 'suvs'), // MPCHRISTMAS2018 DLC
+('Toros', 'TOROS', 25000, 'suvs'),                          // MPCHRISTMAS2018 DLC
 ('XLS', 'XLS', 25000, 'suvs'),
 ('XLS (Armored)', 'XLS2', 25000, 'suvs'),
 
@@ -1607,15 +1606,15 @@ INSERT INTO `vehicles` (`name`, `model`, `price`, `category`) VALUES
 ('Buccaneer Custom', 'BUCCANEER2', 25000, 'muscle'),
 ('Chino', 'CHINO', 25000, 'muscle'),
 ('Chino Custom', 'CHINO2', 25000, 'muscle'),
-('Clique', 'CLIQUE', 25000, 'muscle'), // MPCHRISTMAS2018 DLC
+('Clique', 'CLIQUE', 25000, 'muscle'),                          // MPCHRISTMAS2018 DLC
 ('Coquette BlackFin', 'COQUETTE3', 25000, 'muscle'),
-('Deviant', 'DEVIANT', 25000, 'muscle'), // MPCHRISTMAS2018 DLC
+('Deviant', 'DEVIANT', 25000, 'muscle'),                        // MPCHRISTMAS2018 DLC
 ('Dominator', 'DOMINATOR', 25000, 'muscle'),
 ('Pisswasser Dominator', 'DOMINATOR2', 25000, 'muscle'),
 ('Dominator GTX', 'DOMINATOR3', 25000, 'muscle'),
-('Dominator Apocalypse', 'DOMINATOR4', 25000, 'muscle'), // MPCHRISTMAS2018 DLC
-('Dominator Future Shock', 'DOMINATOR5', 25000, 'muscle'), // MPCHRISTMAS2018 DLC
-('Dominator Nightmare', 'DOMINATOR6', 25000, 'muscle'), // MPCHRISTMAS2018 DLC
+('Dominator Apocalypse', 'DOMINATOR4', 25000, 'muscle'),        // MPCHRISTMAS2018 DLC
+('Dominator Future Shock', 'DOMINATOR5', 25000, 'muscle'),      // MPCHRISTMAS2018 DLC
+('Dominator Nightmare', 'DOMINATOR6', 25000, 'muscle'),         // MPCHRISTMAS2018 DLC
 ('Dukes', 'DUKES', 25000, 'muscle'),
 ('Dukes ODeath', 'DUKES2', 25000, 'muscle'),
 ('Ellie', 'ELLIE', 25000, 'muscle'),
@@ -1627,13 +1626,13 @@ INSERT INTO `vehicles` (`name`, `model`, `price`, `category`) VALUES
 ('Hermes', 'HERMES', 25000, 'muscle'),
 ('HotKnife', 'HOTKNIFE', 25000, 'muscle'),
 ('Hustler', 'HUSTLER', 25000, 'muscle'),
-('Impaler', 'IMPALER', 25000, 'muscle'), // MPCHRISTMAS2018 DLC
-('Impaler Apocalypse', 'IMPALER2', 25000, 'muscle'), // MPCHRISTMAS2018 DLC
-('Impaler Future Shock', 'IMPALER3', 25000, 'muscle'), // MPCHRISTMAS2018 DLC
-('Impaler Nightmare', 'IMPALER4', 25000, 'muscle'), // MPCHRISTMAS2018 DLC
-('Apocalypse Imperator', 'IMPERATOR', 25000, 'muscle'), // MPCHRISTMAS2018 DLC
-('Future Shock Imperator', 'IMPERATOR2', 25000, 'muscle'), // MPCHRISTMAS2018 DLC
-('Nightmare Imperator', 'IMPERATOR3', 25000, 'muscle'), // MPCHRISTMAS2018 DLC
+('Impaler', 'IMPALER', 25000, 'muscle'),                        // MPCHRISTMAS2018 DLC
+('Impaler Apocalypse', 'IMPALER2', 25000, 'muscle'),            // MPCHRISTMAS2018 DLC
+('Impaler Future Shock', 'IMPALER3', 25000, 'muscle'),          // MPCHRISTMAS2018 DLC
+('Impaler Nightmare', 'IMPALER4', 25000, 'muscle'),             // MPCHRISTMAS2018 DLC
+('Apocalypse Imperator', 'IMPERATOR', 25000, 'muscle'),         // MPCHRISTMAS2018 DLC
+('Future Shock Imperator', 'IMPERATOR2', 25000, 'muscle'),      // MPCHRISTMAS2018 DLC
+('Nightmare Imperator', 'IMPERATOR3', 25000, 'muscle'),         // MPCHRISTMAS2018 DLC
 ('Lurcher', 'LURCHER', 25000, 'muscle'),
 ('Moonbeam', 'MOONBEAM', 25000, 'muscle'),
 ('Moonbeam Custom', 'MOONBEAM2', 25000, 'muscle'),
@@ -1650,15 +1649,15 @@ INSERT INTO `vehicles` (`name`, `model`, `price`, `category`) VALUES
 ('Slamvan', 'SLAMVAN', 25000, 'muscle'),
 ('Lost Slamvan', 'SLAMVAN2', 25000, 'muscle'),
 ('Slamvan Custom', 'SLAMVAN3', 25000, 'muscle'),
-('Apocalypse Slamvan', 'SLAMVAN4', 25000, 'muscle'), // MPCHRISTMAS2018 DLC
-('Future Shock Slamvan', 'SLAMVAN5', 25000, 'muscle'), // MPCHRISTMAS2018 DLC
-('Nightmare Slamvan', 'SLAMVAN6', 25000, 'muscle'), // MPCHRISTMAS2018 DLC
+('Apocalypse Slamvan', 'SLAMVAN4', 25000, 'muscle'),            // MPCHRISTMAS2018 DLC
+('Future Shock Slamvan', 'SLAMVAN5', 25000, 'muscle'),          // MPCHRISTMAS2018 DLC
+('Nightmare Slamvan', 'SLAMVAN6', 25000, 'muscle'),             // MPCHRISTMAS2018 DLC
 ('Stallion', 'STALION', 25000, 'muscle'),
 ('Burger Shot Stallion', 'STALION2', 25000, 'muscle'),
 ('Tampa', 'TAMPA', 25000, 'muscle'),
 ('Weaponized Tampa', 'TAMPA3', 25000, 'muscle'),
-('Tulip', 'TULIP', 25000, 'muscle'), // MPCHRISTMAS2018 DLC
-('Vamos', 'VAMOS', 25000, 'muscle'), // MPCHRISTMAS2018 DLC
+('Tulip', 'TULIP', 25000, 'muscle'),                            // MPCHRISTMAS2018 DLC
+('Vamos', 'VAMOS', 25000, 'muscle'),                            // MPCHRISTMAS2018 DLC
 ('Vigero', 'VIGERO', 25000, 'muscle'),
 ('Virgo', 'VIRGO', 25000, 'muscle'),
 ('Virgo Classic Custom', 'VIRGO2', 25000, 'muscle'),
@@ -1678,7 +1677,7 @@ INSERT INTO `vehicles` (`name`, `model`, `price`, `category`) VALUES
 ('Coquette Classic', 'COQUETTE2', 25000, 'sportsclassics'),
 ('Deluxo', 'DELUXO', 25000, 'sportsclassics'),
 ('Fagaloa', 'FAGALOA', 25000, 'sportsclassics'),
-('Stirling GT', 'FELTZER3', 25000, 'sportsclassics'), // Stirling GT
+('Stirling GT', 'FELTZER3', 25000, 'sportsclassics'),           // Stirling GT
 ('GT 500', 'GT500', 25000, 'sportsclassics'),
 ('Infernus Classic', 'INFERNUS2', 25000, 'sportsclassics'),
 ('JB 700', 'JB700', 25000, 'sportsclassics'),
@@ -1695,7 +1694,7 @@ INSERT INTO `vehicles` (`name`, `model`, `price`, `category`) VALUES
 ('Stinger', 'STINGER', 25000, 'sportsclassics'),
 ('Stinger GT', 'STINGERGT', 25000, 'sportsclassics'),
 ('Stromberg', 'STROMBERG', 25000, 'sportsclassics'),
-('Swinger', 'SWINGER', 25000, 'sportsclassics'), // dlc (mpbattle)
+('Swinger', 'SWINGER', 25000, 'sportsclassics'),                // dlc (mpbattle)
 ('Torero', 'TORERO', 25000, 'sportsclassics'),
 ('Tornado', 'TORNADO', 25000, 'sportsclassics'),
 ('Tornado II', 'TORNADO2', 25000, 'sportsclassics'),
@@ -1732,7 +1731,7 @@ INSERT INTO `vehicles` (`name`, `model`, `price`, `category`) VALUES
 ('Futo', 'FUTO', 25000, 'sports'),
 ('GB200', 'GB200', 25000, 'sports'),
 ('Hotring Sabre', 'HOTRING', 25000, 'sports'),
-('Itali GTO', 'ITALIGTO', 25000, 'sports'), // MPCHRISTMAS2018 DLC
+('Itali GTO', 'ITALIGTO', 25000, 'sports'),                 // MPCHRISTMAS2018 DLC
 ('Jester', 'JESTER', 25000, 'sports'),
 ('Jester (Race Car)', 'JESTER2', 25000, 'sports'),
 ('Khamelion', 'KHAMELION', 25000, 'sports'),
@@ -1741,7 +1740,7 @@ INSERT INTO `vehicles` (`name`, `model`, `price`, `category`) VALUES
 ('Lynx', 'LYNX', 25000, 'sports'),
 ('Massacro', 'MASSACRO', 25000, 'sports'),
 ('Massacro (race Car)', 'MASSACRO2', 25000, 'sports'),
-('Neon', 'NEON', 25000, 'sports'), // Doomsday Heist Update
+('Neon', 'NEON', 25000, 'sports'),                          // Doomsday Heist Update
 ('9F', 'NINEF', 25000, 'sports'),
 ('9F Carbrio', 'NINEF2', 25000, 'sports'),
 ('Omnis', 'OMNIS', 25000, 'sports'),
@@ -1757,7 +1756,7 @@ INSERT INTO `vehicles` (`name`, `model`, `price`, `category`) VALUES
 ('Schafter V12', 'SCHAFTER3', 25000, 'sports'),
 ('Schafter LWB', 'SCHAFTER4', 25000, 'sports'),
 ('Schafter V12 (Armored)', 'SCHAFTER5', 25000, 'sports'),
-('Schlagen GT', 'SCHLAGEN', 25000, 'sports'), // MPCHRISTMAS2018 DLC
+('Schlagen GT', 'SCHLAGEN', 25000, 'sports'),               // MPCHRISTMAS2018 DLC
 ('Schwartzer', 'SCHWARZER', 25000, 'sports'),
 ('Sentinel Classic', 'SENTINEL3', 25000, 'sports'),
 ('Seven-70', 'SEVEN70', 25000, 'sports'),
@@ -1768,9 +1767,9 @@ INSERT INTO `vehicles` (`name`, `model`, `price`, `category`) VALUES
 ('Drift Tampa', 'TAMPA2', 25000, 'sports'),
 ('Tropos Rallye', 'TROPOS', 25000, 'sports'),
 ('Verlierer', 'VERLIERER2', 25000, 'sports'),
-('Apocalypse ZR380', 'ZR380', 25000, 'sports'), // MPCHRISTMAS2018 DLC
-('Future Shock ZR380', 'ZR3802', 25000, 'sports'), // MPCHRISTMAS2018 DLC
-('Nightmare ZR380', 'ZR3803', 25000, 'sports'), // MPCHRISTMAS2018 DLC
+('Apocalypse ZR380', 'ZR380', 25000, 'sports'),             // MPCHRISTMAS2018 DLC
+('Future Shock ZR380', 'ZR3802', 25000, 'sports'),          // MPCHRISTMAS2018 DLC
+('Nightmare ZR380', 'ZR3803', 25000, 'sports'),             // MPCHRISTMAS2018 DLC
 
 #Super
 ('Adder', 'ADDER', 25000, 'super'),
@@ -1779,7 +1778,7 @@ INSERT INTO `vehicles` (`name`, `model`, `price`, `category`) VALUES
 ('Bullet', 'BULLET', 25000, 'super'),
 ('Cheetah', 'CHEETAH', 25000, 'super'),
 ('Cyclone', 'CYCLONE', 25000, 'super'),
-('Deveste', 'DEVESTE', 25000, 'super'), // MPCHRISTMAS2018 DLC
+('Deveste', 'DEVESTE', 25000, 'super'),                     // MPCHRISTMAS2018 DLC
 ('Entity XF', 'ENTITYXF', 25000, 'super'),
 ('Entity XXR', 'ENTITY2', 25000, 'super'),
 ('FMJ', 'FMJ', 25000, 'super'),
@@ -1796,8 +1795,8 @@ INSERT INTO `vehicles` (`name`, `model`, `price`, `category`) VALUES
 ('X80 Proto', 'PROTOTIPO', 25000, 'super'),
 ('Reaper', 'REAPER', 25000, 'super'),
 ('SC1', 'SC1', 25000, 'super'),
-('Scramjet', 'SCRAMJET', 25000, 'super'), // dlc (mpbattle)
-('ETR1', 'SHEAVA', 25000, 'super'), // ETR1
+('Scramjet', 'SCRAMJET', 25000, 'super'),                   // dlc (mpbattle)
+('ETR1', 'SHEAVA', 25000, 'super'),                         // ETR1
 ('Sultan RS', 'SULTANRS', 25000, 'super'),
 ('T20', 'T20', 25000, 'super'),
 ('Taipan', 'TAIPAN', 25000, 'super'),
@@ -1828,21 +1827,21 @@ INSERT INTO `vehicles` (`name`, `model`, `price`, `category`) VALUES
 ('Daemon', 'DAEMON', 25000, 'motorcycles'),
 ('Daemon II', 'DAEMON2', 25000, 'motorcycles'),
 ('Defiler', 'DEFILER', 25000, 'motorcycles'),
-('Apocalypse Deathbike', 'DEATHBIKE', 25000, 'motorcycles'), // MPCHRISTMAS2018 DLC
-('Future Shock Deathbike', 'DEATHBIKE2', 25000, 'motorcycles'), // MPCHRISTMAS2018 DLC
-('Nightmare Deathbike', 'DEATHBIKE3', 25000, 'motorcycles'), // MPCHRISTMAS2018 DLC
+('Apocalypse Deathbike', 'DEATHBIKE', 25000, 'motorcycles'),        // MPCHRISTMAS2018 DLC
+('Future Shock Deathbike', 'DEATHBIKE2', 25000, 'motorcycles'),     // MPCHRISTMAS2018 DLC
+('Nightmare Deathbike', 'DEATHBIKE3', 25000, 'motorcycles'),        // MPCHRISTMAS2018 DLC
 ('Diablous', 'DIABLOUS', 25000, 'motorcycles'),
 ('Diablous Custom', 'DIABLOUS2', 25000, 'motorcycles'),
 ('Double-T', 'DOUBLE', 25000, 'motorcycles'),
-('Enduro', 'ENDURO', 25000, 'motorcycles'),
+('Enduro', 'ENDURO', 25000, 'motorcycles'),                         // Dirt Bike
 ('Esskey', 'ESSKEY', 25000, 'motorcycles'),
-('Fagio Sport', 'FAGGIO', 25000, 'motorcycles'),
-('Fagio', 'FAGGIO2', 25000, 'motorcycles'),
-('Fagio Mod', 'FAGGIO3', 25000, 'motorcycles'),
-('FCR 1000', 'FCR', 25000, 'motorcycles'),
-('FCR 1000 Custom', 'FCR2', 25000, 'motorcycles'),
+('Fagio Sport', 'FAGGIO', 25000, 'motorcycles'),                    // Moped
+('Fagio', 'FAGGIO2', 25000, 'motorcycles'),                         // Moped
+('Fagio Mod', 'FAGGIO3', 25000, 'motorcycles'),                     // Moped
+('FCR 1000', 'FCR', 25000, 'motorcycles'),                          // Sport Bike
+('FCR 1000 Custom', 'FCR2', 25000, 'motorcycles'),                  // Sport Bike
 ('Gargoyle', 'GARGOYLE', 25000, 'motorcycles'),
-('Hakuchou', 'HAKUCHOU', 25000, 'motorcycles'),
+('Hakuchou', 'HAKUCHOU', 25000, 'motorcycles'),                     // Sport Bike
 ('Hakuchou Drag', 'HAKUCHOU2', 25000, 'motorcycles'),
 ('Hexer', 'HEXER', 25000, 'motorcycles'),
 ('Innovation', 'INNOVATION', 25000, 'motorcycles'),
@@ -1851,7 +1850,7 @@ INSERT INTO `vehicles` (`name`, `model`, `price`, `category`) VALUES
 ('Nemesis', 'NEMESIS', 25000, 'motorcycles'),
 ('Nightblade', 'NIGHTBLADE', 25000, 'motorcycles'),
 ('Opressor', 'OPPRESSOR', 25000, 'motorcycles'),
-('Opressor Mk II', 'OPPRESSOR2', 25000, 'motorcycles'), // dlc (mpbattle)
+('Opressor Mk II', 'OPPRESSOR2', 25000, 'motorcycles'),             // dlc (mpbattle)
 ('PCJ 600', 'PCJ', 25000, 'motorcycles'),
 ('Ratbike', 'RATBIKE', 25000, 'motorcycles'),
 ('Ruffian', 'RUFFIAN', 25000, 'motorcycles'),
@@ -1878,12 +1877,12 @@ INSERT INTO `vehicles` (`name`, `model`, `price`, `category`) VALUES
 ('Blazer Aqua', 'BLAZER5', 25000, 'offroad'),
 ('Bodhi', 'BODHI2', 25000, 'offroad'),
 ('Brawler', 'BRAWLER', 25000, 'offroad'),
-('Apocalypse Bruiser', 'BRUISER', 25000, 'offroad'), // MPCHRISTMAS2018 DLC
-('Future Shock Bruiser', 'BRUISER2', 25000, 'offroad'), // MPCHRISTMAS2018 DLC
-('Nightmare Bruiser', 'BRUISER3', 25000, 'offroad'), // MPCHRISTMAS2018 DLC
-('Apocalypse Brutus', 'BRUTUS', 25000, 'offroad'), // MPCHRISTMAS2018 DLC
-('Future Shock Brutus', 'BRUTUS2', 25000, 'offroad'), // MPCHRISTMAS2018 DLC
-('Nightmare Brutus', 'BRUTUS3', 25000, 'offroad'), // MPCHRISTMAS2018 DLC
+('Apocalypse Bruiser', 'BRUISER', 25000, 'offroad'),                    // MPCHRISTMAS2018 DLC
+('Future Shock Bruiser', 'BRUISER2', 25000, 'offroad'),                 // MPCHRISTMAS2018 DLC
+('Nightmare Bruiser', 'BRUISER3', 25000, 'offroad'),                    // MPCHRISTMAS2018 DLC
+('Apocalypse Brutus', 'BRUTUS', 25000, 'offroad'),                      // MPCHRISTMAS2018 DLC
+('Future Shock Brutus', 'BRUTUS2', 25000, 'offroad'),                   // MPCHRISTMAS2018 DLC
+('Nightmare Brutus', 'BRUTUS3', 25000, 'offroad'),                      // MPCHRISTMAS2018 DLC
 ('Caracara', 'CARACARA', 25000, 'offroad'),
 ('Duneloader', 'DLOADER', 25000, 'offroad'),
 ('Dubsta 6x6', 'DUBSTA3', 25000, 'offroad'),
@@ -1892,44 +1891,44 @@ INSERT INTO `vehicles` (`name`, `model`, `price`, `category`) VALUES
 ('Dune FAV', 'DUNE3', 25000, 'offroad'),
 ('Ramp Buggy', 'DUNE4', 25000, 'offroad'),
 ('Ramp Buggy II', 'DUNE5', 25000, 'offroad'),
-('Freecrawler', 'FREECRAWLER', 25000, 'offroad'), // dlc (mpbattle)
+('Freecrawler', 'FREECRAWLER', 25000, 'offroad'),                       // dlc (mpbattle)
 ('Insurgent Pick-Up', 'INSURGENT', 25000, 'offroad'),
 ('Insurgent', 'INSURGENT2', 25000, 'offroad'),
 ('Insurgent Pick-Up Custom', 'INSURGENT3', 25000, 'offroad'),
 ('Kalahari', 'KALAHARI', 25000, 'offroad'),
 ('Kamacho', 'KAMACHO', 25000, 'offroad'),
 ('Marshal', 'MARSHALL', 25000, 'offroad'),
-('Menacer', 'MENACER', 25000, 'offroad'), // dlc (mpbattle)
+('Menacer', 'MENACER', 25000, 'offroad'),                               // dlc (mpbattle)
 ('Mesa', 'MESA3', 25000, 'offroad'),
 ('Liberator', 'MONSTER', 25000, 'offroad'),
-('Apocalypse Sasquatch', 'MONSTER3', 25000, 'offroad'), // MPCHRISTMAS2018 DLC
-('Future Shock Sasquatch', 'MONSTER4', 25000, 'offroad'), // MPCHRISTMAS2018 DLC
-('Nightmare Sasquatch', 'MONSTER5', 25000, 'offroad'), // MPCHRISTMAS2018 DLC
+('Apocalypse Sasquatch', 'MONSTER3', 25000, 'offroad'),                 // MPCHRISTMAS2018 DLC
+('Future Shock Sasquatch', 'MONSTER4', 25000, 'offroad'),               // MPCHRISTMAS2018 DLC
+('Nightmare Sasquatch', 'MONSTER5', 25000, 'offroad'),                  // MPCHRISTMAS2018 DLC
 ('Nightshark', 'NIGHTSHARK', 25000, 'offroad'),
 ('Rancher XL', 'RANCHERXL', 25000, 'offroad'),
 ('Rancher XL II', 'RANCHERXL2', 25000, 'offroad'),
-('RC Bandito', 'RCBANDITO', 25000, 'offroad'), // MPCHRISTMAS2018 DLC
+('RC Bandito', 'RCBANDITO', 25000, 'offroad'),                          // Toy Car
 ('Rebel', 'REBEL', 25000, 'offroad'),
 ('Rusty Rebel', 'REBEL2', 25000, 'offroad'),
 ('Riata', 'RIATA', 25000, 'offroad'),
 ('Sandking XL', 'SANDKING', 25000, 'offroad'),
 ('Sandking SWB', 'SANDKING2', 25000, 'offroad'),
-('Technical', 'TECHNICAL', 25000, 'offroad'),
-('Technical Aqua', 'TECHNICAL2', 25000, 'offroad'),
-('Technical Custom', 'TECHNICAL3', 25000, 'offroad'),
+('Technical', 'TECHNICAL', 25000, 'offroad'),                           // Military
+('Technical Aqua', 'TECHNICAL2', 25000, 'offroad'),                     // Military
+('Technical Custom', 'TECHNICAL3', 25000, 'offroad'),                   // Military
 ('Trophy Truck', 'TROPHYTRUCK', 25000, 'offroad'),
-('Desert Raid', 'TROPHYTRUCK2', 25000, 'offroad'),
+('Desert Raid', 'TROPHYTRUCK2', 25000, 'offroad');
 
 # Custom
-('18 Chevrolet Camaro ZL1', '2018zl1', 70000, 'super'),
+('18 Chevy Camaro ZL1', '2018zl1', 70000, 'super'),
 ('19 Shelby GT500', '19gt500', 70000, 'super'),
 ('Aston Martin One-77', 'one77', 70000, 'super'),
 ('Audi A6', 'a615', 70000, 'super'),
 ('Audi R8', 'ar8lb', 70000, 'super'),
 ('13 Bentley Continental GT', 'contgt13', 70000, 'super'),
 ('17 Bugatti Chiron', '2017chiron', 70000, 'super'),
-('Chevrolet Chevelle SS 454', 'chevelless', 70000, 'super'),
-('Chevrolette Corvette C7', 'c7', 70000, 'super'),
+('Chevy Chevelle SS 454', 'chevelless', 70000, 'super'),
+('Chevy Corvette C7', 'c7', 70000, 'super'),
 ('Cadilac ATSV', 'cats', 70000, 'super'),
 ('Presidential Limo', 'cone', 70000, 'super'),
 ('18 Dodge Challenger Demon', 'demon', 70000, 'super'),
@@ -1949,6 +1948,7 @@ INSERT INTO `vehicles` (`name`, `model`, `price`, `category`) VALUES
 ('Porsche GT2RS', 'GT2RS', 70000, 'super'),
 ('Porsche 918 Spyder', '918', 70000, 'super'),
 ('Subaru WRX STI', 'subwrx', 70000, 'super');
+
 
 -- --------------------------------------------------------
 
