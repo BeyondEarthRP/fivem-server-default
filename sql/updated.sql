@@ -1486,7 +1486,15 @@ PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=135 DEFAULT CHARSET=utf8mb4;
 
 
+--
+-- Dumping data for table `vehicles`
+--
+
 INSERT INTO `vehicles` (`name`, `model`, `price`, `category`) VALUES
+
+# Compacts
+
+
 # Coupes
 ('Blista', 'BLISTA', 25000, 'coupes'),
 ('Brioso R/A', 'BRIOSO', 25000, 'coupes'),
@@ -1688,7 +1696,7 @@ INSERT INTO `vehicles` (`name`, `model`, `price`, `category`) VALUES
 ('190Z', 'Z190', 25000, 'sportsclassics'),
 ('Z-Type', 'ZTYPE', 25000, 'sportsclassics'),
 
-#Sport
+# Sport
 ('Alpha', 'ALPHA', 25000, 'sports'),
 ('Banshee', 'BANSHEE', 25000, 'sports'),
 ('Bestia GTS', 'BESTIAGTS', 25000, 'sports'),
@@ -1752,7 +1760,7 @@ INSERT INTO `vehicles` (`name`, `model`, `price`, `category`) VALUES
 ('Future Shock ZR380', 'ZR3802', 25000, 'sports'),
 ('Nightmare ZR380', 'ZR3803', 25000, 'sports'),
 
-#Super
+# Super
 ('Adder', 'ADDER', 25000, 'super'),
 ('Autarch', 'AUTARCH', 25000, 'super'),
 ('Banshee 900R', 'BANSHEE2', 25000, 'super'),
@@ -1795,60 +1803,65 @@ INSERT INTO `vehicles` (`name`, `model`, `price`, `category`) VALUES
 ('XA-21', 'XA21', 25000, 'super'),
 ('Zentorno', 'ZENTORNO', 25000, 'super'),
 
-#Motorcycles
-('Akuma', 'AKUMA', 25000, 'motorcycles'),
-('Avarus', 'AVARUS', 25000, 'motorcycles'),
-('Bagger', 'BAGGER', 25000, 'motorcycles'),
-('Bati 801', 'BATI', 25000, 'motorcycles'),
-('Bat 801RR', 'BATI2', 25000, 'motorcycles'),
-('BF400', 'BF400', 25000, 'motorcycles'),
-('Carbon RS', 'CARBONRS', 25000, 'motorcycles'),
-('Chimera', 'CHIMERA', 25000, 'motorcycles'),
-('Cliffhanger', 'CLIFFHANGER', 25000, 'motorcycles'),
-('Daemon', 'DAEMON', 25000, 'motorcycles'),
-('Daemon II', 'DAEMON2', 25000, 'motorcycles'),
-('Defiler', 'DEFILER', 25000, 'motorcycles'),
-('Apocalypse Deathbike', 'DEATHBIKE', 25000, 'motorcycles'),
-('Future Shock Deathbike', 'DEATHBIKE2', 25000, 'motorcycles'),
-('Nightmare Deathbike', 'DEATHBIKE3', 25000, 'motorcycles'),
-('Diablous', 'DIABLOUS', 25000, 'motorcycles'),
-('Diablous Custom', 'DIABLOUS2', 25000, 'motorcycles'),
-('Double-T', 'DOUBLE', 25000, 'motorcycles'),
-('Enduro', 'ENDURO', 25000, 'motorcycles'),
-('Esskey', 'ESSKEY', 25000, 'motorcycles'),
-('Fagio Sport', 'FAGGIO', 25000, 'motorcycles'),
-('Fagio', 'FAGGIO2', 25000, 'motorcycles'),
-('Fagio Mod', 'FAGGIO3', 25000, 'motorcycles'),
-('FCR 1000', 'FCR', 25000, 'motorcycles'),
-('FCR 1000 Custom', 'FCR2', 25000, 'motorcycles'),
-('Gargoyle', 'GARGOYLE', 25000, 'motorcycles'),
-('Hakuchou', 'HAKUCHOU', 25000, 'motorcycles'),
-('Hakuchou Drag', 'HAKUCHOU2', 25000, 'motorcycles'),
-('Hexer', 'HEXER', 25000, 'motorcycles'),
-('Innovation', 'INNOVATION', 25000, 'motorcycles'),
-('Lectro', 'LECTRO', 25000, 'motorcycles'),
-('Manchez', 'MANCHEZ', 25000, 'motorcycles'),
-('Nemesis', 'NEMESIS', 25000, 'motorcycles'),
-('Nightblade', 'NIGHTBLADE', 25000, 'motorcycles'),
-('Opressor', 'OPPRESSOR', 25000, 'motorcycles'),
-('Opressor Mk II', 'OPPRESSOR2', 25000, 'motorcycles'),
-('PCJ 600', 'PCJ', 25000, 'motorcycles'),
-('Ratbike', 'RATBIKE', 25000, 'motorcycles'),
-('Ruffian', 'RUFFIAN', 25000, 'motorcycles'),
-('Sanchez (livery)', 'SANCHEZ', 25000, 'motorcycles'),
-('Sanchez', 'SANCHEZ2', 25000, 'motorcycles'),
-('Sanctus', 'SANCTUS', 25000, 'motorcycles'),
-('Shotaro', 'SHOTARO', 25000, 'motorcycles'),
-('Sovereign', 'SOVEREIGN', 25000, 'motorcycles'),
-('Thrust', 'THRUST', 25000, 'motorcycles'),
-('Vader', 'VADER', 25000, 'motorcycles'),
-('Vindicator', 'VINDICATOR', 25000, 'motorcycles'),
-('Vortex', 'VORTEX', 25000, 'motorcycles'),
-('Wolfsbane', 'WOLFSBANE', 25000, 'motorcycles'),
-('Zombie Bobber', 'ZOMBIEA', 25000, 'motorcycles'),
-('Zombie Chopper', 'ZOMBIEB', 25000, 'motorcycles'),
+# Motorcycles
+## Sport Bike
+## Cruisers
+## Softtail
+## Enduro
+('Akuma', 'AKUMA', 25000, 'smoto'),
+('Avarus', 'AVARUS', 25000, 'chopper'),
+('Bagger', 'BAGGER', 25000, 'cruiser'),
+('Bati 801', 'BATI', 25000, 'smoto'),
+('Bat 801RR', 'BATI2', 25000, 'smoto'),
+('BF400', 'BF400', 25000, 'moto'),
+('Carbon RS', 'CARBONRS', 25000, 'smoto'),
+('Chimera', 'CHIMERA', 25000, 'chopper'),
+('Cliffhanger', 'CLIFFHANGER', 25000, 'softtail'),
+('Daemon', 'DAEMON', 25000, 'chopper'),
+('Daemon II', 'DAEMON2', 25000, 'chopper'),
+('Defiler', 'DEFILER', 25000, 'smoto'),
+('Apocalypse Deathbike', 'DEATHBIKE', 25000, 'moto'),
+('Future Shock Deathbike', 'DEATHBIKE2', 25000, 'moto'),
+('Nightmare Deathbike', 'DEATHBIKE3', 25000, 'moto'),
+('Diablous', 'DIABLOUS', 25000, 'moto'),
+('Diablous Custom', 'DIABLOUS2', 25000, 'moto'),
+('Double-T', 'DOUBLE', 25000, 'smoto'),
+('Enduro', 'ENDURO', 25000, 'enduro'),
+('Esskey', 'ESSKEY', 25000, 'moto'),
+('Fagio Sport', 'FAGGIO', 25000, 'moped'),
+('Fagio', 'FAGGIO2', 25000, 'moped'),
+('Fagio Mod', 'FAGGIO3', 25000, 'moped'),
+('FCR 1000', 'FCR', 25000, 'smoto'),
+('FCR 1000 Custom', 'FCR2', 25000, 'smoto'),
+('Gargoyle', 'GARGOYLE', 25000, 'chopper'),
+('Hakuchou', 'HAKUCHOU', 25000, 'smoto'),
+('Hakuchou Drag', 'HAKUCHOU2', 25000, 'smoto'),
+('Hexer', 'HEXER', 25000, 'chopper'),
+('Innovation', 'INNOVATION', 25000, 'chopper'),
+('Lectro', 'LECTRO', 25000, 'moto'),
+('Manchez', 'MANCHEZ', 25000, 'enduro'),
+('Nemesis', 'NEMESIS', 25000, 'smoto'),
+('Nightblade', 'NIGHTBLADE', 25000, 'moto'),
+('Opressor', 'OPPRESSOR', 25000, 'moto'),
+('Opressor Mk II', 'OPPRESSOR2', 25000, 'moto'),
+('PCJ 600', 'PCJ', 25000, 'smoto'),
+('Ratbike', 'RATBIKE', 25000, 'softtail'),
+('Ruffian', 'RUFFIAN', 25000, 'smoto'),
+('Sanchez (livery)', 'SANCHEZ', 25000, 'enduro'),
+('Sanchez', 'SANCHEZ2', 25000, 'enduro'),
+('Sanctus', 'SANCTUS', 25000, 'chopper'),
+('Shotaro', 'SHOTARO', 25000, 'moto'),
+('Sovereign', 'SOVEREIGN', 25000, 'softtail'),
+('Thrust', 'THRUST', 25000, 'moto'),
+('Vader', 'VADER', 25000, 'smoto'),
+('Vindicator', 'VINDICATOR', 25000, 'moto'),
+('Vortex', 'VORTEX', 25000, 'smoto'),
+('Wolfsbane', 'WOLFSBANE', 25000, 'softtail'),
+('Zombie Bobber', 'ZOMBIEA', 25000, 'chopper'),
+('Zombie Chopper', 'ZOMBIEB', 25000, 'chopper'),
 
 # Offroad
+## Military ##
 ('Injection', 'BFINJECTION', 25000, 'offroad'),
 ('Bifta', 'BIFTA', 25000, 'offroad'),
 ('Blazer', 'BLAZER', 25000, 'offroad'),
@@ -1900,36 +1913,40 @@ INSERT INTO `vehicles` (`name`, `model`, `price`, `category`) VALUES
 ('Trophy Truck', 'TROPHYTRUCK', 25000, 'offroad'),
 ('Desert Raid', 'TROPHYTRUCK2', 25000, 'offroad');
 
-# Custom
-('18 Chevy Camaro ZL1', '2018zl1', 70000, 'super'),
-('19 Shelby GT500', '19gt500', 70000, 'super'),
-('Aston Martin One-77', 'one77', 70000, 'super'),
-('Audi A6', 'a615', 70000, 'super'),
-('Audi R8', 'ar8lb', 70000, 'super'),
-('13 Bentley Continental GT', 'contgt13', 70000, 'super'),
-('17 Bugatti Chiron', '2017chiron', 70000, 'super'),
-('Chevy Chevelle SS 454', 'chevelless', 70000, 'super'),
-('Chevy Corvette C7', 'c7', 70000, 'super'),
-('Cadilac ATSV', 'cats', 70000, 'super'),
-('Presidential Limo', 'cone', 70000, 'super'),
-('18 Dodge Challenger Demon', 'demon', 70000, 'super'),
-('16 Dodge Charger SRT', '16charger', 70000, 'super'),
-('Dodge Viper SRT', 'viper', 70000, 'super'),
-('18 Ford Mustang GT', 'fmgt', 70000, 'super'),
-('17 Ford GT', 'gt17', 70000, 'super'),
-('15 Ford Mustang', 'mgt', 70000, 'super'),
-('GMC Yukon Denali', 'gmcyd', 70000, 'super'),
-('Ninja', 'H2', 70000, 'super'),
-('Honda Civic Type R', 'EK9', 70000, 'super'),
-('Koensigsegg Agera R', 'acsr', 70000, 'super'),
-('McLaren P1', 'p1', 70000, 'super'),
-('Mitsubishi Evo IX', 'evo9', 70000, 'super'),
-('Nissan GTR', 'gt', 70000, 'super'),
-('Nissan 370Z', '370z', 70000, 'super'),
-('Porsche GT2RS', 'GT2RS', 70000, 'super'),
-('Porsche 918 Spyder', '918', 70000, 'super'),
-('Subaru WRX STI', 'subwrx', 70000, 'super');
+# Vans
 
+
+# Exotics
+('18 Chevy Camaro ZL1', '2018zl1', 70000, 'exotic'),
+('19 Shelby GT500', '19gt500', 70000, 'exotic'),
+('Aston Martin One-77', 'one77', 70000, 'exotic'),
+('Audi A6', 'a615', 70000, 'exotic'),
+('Audi R8', 'ar8lb', 70000, 'exotic'),
+('13 Bentley Continental GT', 'contgt13', 70000, 'exotic'),
+('17 Bugatti Chiron', '2017chiron', 70000, 'exotic'),
+('Chevy Chevelle SS 454', 'chevelless', 70000, 'exotic'),
+('Chevy Corvette C7', 'c7', 70000, 'exotic'),
+#('Cadilac ATSV', 'cats', 70000, 'exotic'),
+('18 Dodge Challenger Demon', 'demon', 70000, 'exotic'),
+('16 Dodge Charger SRT', '16charger', 70000, 'exotic'),
+('Dodge Viper SRT', 'viper', 70000, 'exotic'),
+('18 Ford Mustang GT', 'fmgt', 70000, 'exotic'),
+('17 Ford GT', 'gt17', 70000, 'exotic'),
+('15 Ford Mustang', 'mgt', 70000, 'exotic'),
+('GMC Yukon Denali', 'gmcyd', 70000, 'exotic'),
+('Ninja', 'H2', 70000, 'exotic'),
+('Koensigsegg Agera R', 'acsr', 70000, 'exotic'),
+('McLaren P1', 'p1', 70000, 'exotic'),
+('Nissan GTR', 'gt', 70000, 'exotic'),
+('Nissan 370Z', '370z', 70000, 'exotic'),
+('Porsche GT2RS', 'GT2RS', 70000, 'exotic'),
+('Porsche 918 Spyder', '918', 70000, 'exotic'),
+
+('Honda Civic Type R', 'EK9', 70000, 'rally'),
+('Mitsubishi Evo IX', 'evo9', 70000, 'rally'),
+('Subaru WRX STI', 'subwrx', 70000, 'rally'),
+
+('Presidential Limo', 'cone', 70000, 'special'),
 
 -- --------------------------------------------------------
 
@@ -1958,7 +1975,15 @@ INSERT INTO `vehicle_categories` (`name`, `label`) VALUES
 ('sportsclassics', 'Sports Classics'),
 ('super', 'Super'),
 ('suvs', 'SUVs'),
-('vans', 'Vans');
+('vans', 'Vans'),
+('special', 'Special'),
+('exotic', 'Exotic'),
+('rally', 'Rally'),
+('smoto', 'Sport Bikes'),
+('moto', 'Moto'),
+('chopper', 'Chopper'),
+('softtail', 'Soft Tail'),
+('enduro', 'Enduro');
 
 -- --------------------------------------------------------
 
