@@ -1154,7 +1154,7 @@ echo "Railhouse"
 # Start Server
 ####################################
     screen -r fivem
-    bash "$GAME"/run.sh +exec server.cfg
+    bash "$GAME"/../run.sh +exec server.cfg
 
 ##############################################################
 #####
