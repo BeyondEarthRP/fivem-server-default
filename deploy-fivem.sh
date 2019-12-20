@@ -72,7 +72,7 @@ read -p "Create User? [fivemserver]" USERIN
 # Dependancies
 ########################
 echo "Linux Software"
-    sudo apt-get -y install unzip unrar-free mariadb-server apache2 phpmyadmin
+    sudo apt-get -y install unzip unrar mariadb-server apache2 phpmyadmin
 
 echo "mySQL"
     mysql_secure_installation
