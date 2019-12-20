@@ -979,7 +979,7 @@ echo "ESX - Vehicle Lock"
 git clone https://github.com/ESX-PUBLIC/esx_vehiclelock.git "$ESX"/esx_vehiclelock
 
 echo "ESX - Boilerplate"
-git clone https://github.com/ESX-Org/esx_boilerplate.git [esx]/esx_boilerplate
+git clone https://github.com/ESX-Org/esx_boilerplate.git "$ESX"/esx_boilerplate
 
 echo "ESX - Gym"
 git clone https://github.com/P4NDAzzGaming/esx_gym.git "$ESX"/esx_gym
