@@ -72,7 +72,7 @@ read -p "Create User? [fivemserver]" USERIN
 # Dependancies
 ########################
 echo "Linux Software"
-    sudo apt-get -y install unzip unrar-free mariadb-server apache2 phpmyadmin -y
+    sudo apt-get -y install unzip unrar-free mariadb-server apache2 phpmyadmin
 
 echo "mySQL"
     mysql_secure_installation
@@ -578,13 +578,13 @@ echo "ESX - Jobs - Army"
 
 
 ## -----  Fuel Options ----- ##
+
 echo "Legacy Fuel"
     git clone https://github.com/InZidiuZ/LegacyFuel.git "$MODS"/LegacyFuel
 
 echo "FRFuel"
-    wget -P "$TFIVEM" https://ci.appveyor.com/api/buildjobs/47w8nvjo28mweul4/artifacts/frfuel_v2.0.0.zip
-    unzip "$TFIVEM"/frfuel_v2.0.0.zip -d "$MODS"/FRFuel
-
+    wget -P "$TFIVEM" https://github.com/thers/FRFuel/archive/v1.7.0.zip # not sure what this is, 404 (trying FRFuel by thers, but versions don't line up): https://ci.appveyor.com/api/buildjobs/47w8nvjo28mweul4/artifacts/frfuel_v2.0.0.zip
+    unzip "$TFIVEM"/v1.7.0.zip -d "$MODS"/FRFuel  #This is frfuel_2.0.0.zip, changed to v1.7.0.zip
 
 ## -----  Fuel Options ----- ##
 
@@ -695,6 +695,9 @@ echo "ESX - AIO Menu"
     git clone https://github.com/ArkSeyonet/esx_aiomenu.git "$ESX"/esx_aiomenu
 
 echo "vMenu"
+    if [ -d "$TFIVEM"/vMenu ]; then
+      rm -rf "$TFIVEM"/vMenu
+    fi
     mkdir "$TFIVEM"/vMenu
     wget -P "$TFIVEM"/vMenu https://github.com/TomGrobbe/vMenu/releases/download/v3.1.0/vMenu-v3.1.0.zip
     unzip "$TFIVEM"/vMenu/vMenu-v3.1.0.zip -d "$TFIVEM"/vMenu
@@ -861,7 +864,8 @@ echo "Eden Accessories"
 ## ---- Vehicles ---- ##
 
 echo "wtf_redis"
-    git clone
+    git clone https://github.com/wtf-fivem-mods/wtf_redis.git
+
 echo "wtf_supercharged"
     git clone https://github.com/wtf-fivem-mods/wtf_tesla_supercharger.git "$VEHICLES"/wtf_supercharged
 
@@ -872,9 +876,9 @@ echo "wtf_ev"
     git clone https://github.com/wtf-fivem-mods/wtf_ev "$VEHICLES"/wtf_ev
 
 
-
-echo "Planes"
-    git clone https://github.com/JPapss/-Release--Planes--and-Helicopter-s---Pack--10--Planes-and-Helicopter-s--.git "$VEHICLES"/air_pack-1
+# This repo was removed
+#echo "Planes"
+#    git clone https://github.com/JPapss/-Release--Planes--and-Helicopter-s---Pack--10--Planes-and-Helicopter-s--.git "$VEHICLES"/air_pack-1
 
 ## ---- END Vehicles ---- ##
 
