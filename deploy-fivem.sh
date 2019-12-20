@@ -60,8 +60,8 @@ read -p "Create User? [fivemserver]" USERIN
 
             SESX="$RESOURCES/[sesx]"
 
-    mysql_user="astronaut"
-    mysql_password="iq5h0TjpM3xF"
+    mysql_user="custodian"
+    mysql_password="vAELN964FMHvnHkuAJeXtzSZvZCvpD"
 
 # TEMP DIRECTORIES
         mkdir $SOFTWARE
@@ -85,11 +85,11 @@ echo "mySQL"
 
 
 # mySQL Database
-###############################################
+#####
+#####################
     mysql -e "CREATE DATABASE essentialmode;"
-    mysql -e "CREATE USER 'astronaut'@'localhost' IDENTIFIED BY 'iq5h0TjpM3xF';"
-    mysql -e "GRANT ALL PRIVILEGES ON essentialmode.* TO 'astronaut'@'iq5h0TjpM3xF';"
-    mysql -e "q"
+    mysql -e "CREATE USER '${mysql_user}'@'localhost' IDENTIFIED BY '${mysql_password}';"
+    mysql -e "GRANT ALL PRIVILEGES ON essentialmode.* TO '${mysql_user}'@'localhost';"
 ########################
 
 
@@ -864,7 +864,7 @@ echo "Eden Accessories"
 ## ---- Vehicles ---- ##
 
 echo "wtf_redis"
-    git clone https://github.com/wtf-fivem-mods/wtf_redis.git
+    git clone https://github.com/wtf-fivem-mods/wtf_redis.git "$VEHICLES"/wtf_redis   # WHY IS THIS UNDER VEHICLES?
 
 echo "wtf_supercharged"
     git clone https://github.com/wtf-fivem-mods/wtf_tesla_supercharger.git "$VEHICLES"/wtf_supercharged
@@ -1007,7 +1007,7 @@ echo "FiveM Server Defaults"
 #       cp /var/software/fivem/fivem-server-default/vmenu.cfg /home/fivemserver/server-data/vmenu.cfg
     cp "$TFIVEM"/fivem-server-defaults/admin.cfg "$GAME"/admin.cfg
 
-    mysql --user="$mysql_user" --password="$mysql_password" essentialmode < "$TFIVEM"/fivem-server-defaults/sql/working.sql
+    mysql --user="${mysql_user}" --password="${mysql_password}" essentialmode < "$TFIVEM"/fivem-server-defaults/sql/working.sql
 
 ## ---- END FiveM Server Defaults ---- ##
 
